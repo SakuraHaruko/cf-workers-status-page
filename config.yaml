@@ -40,7 +40,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: buguwu-chatgpt-bot # unique identifier
-    name: buguwuChatGPTBot (Telegram)
+    name: buguwuChatGPTBot (Telegram Bot)
     description: 'buguwu ChatGPT Bot For Telegram' # default=empty
     url: 'https://buguwuchatgpt.bot.nekocafe.moe/' # URL to fetch
     method: GET # default=GET
