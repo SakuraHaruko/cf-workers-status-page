@@ -22,6 +22,14 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
+
+  - id: catland-bbs
+    name: Catland猫猫大陆论坛
+    description: 'Catland猫猫大陆官方论坛'
+    url: 'https://catland.top'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
     
   - id: nekocafe-subconverter
     name: SubConverter
