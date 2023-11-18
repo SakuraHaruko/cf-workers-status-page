@@ -23,6 +23,14 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
+  - id: buguwu
+    name: bugUwU Personal Website
+    description: 'bugUwU Personal Website'
+    url: 'https://qwq.lgbt'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
   - id: catland-bbs
     name: Catland猫猫大陆论坛
     description: 'Catland猫猫大陆官方论坛'
