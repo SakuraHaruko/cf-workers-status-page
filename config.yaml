@@ -23,21 +23,6 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: buguwu
-    name: bugUwU Personal Website
-    description: 'bugUwU Personal Website'
-    url: 'https://qwq.lgbt'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-
-  - id: catland-bbs
-    name: Catland猫猫大陆论坛
-    description: 'Catland猫猫大陆官方论坛'
-    url: 'https://catland.top'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
     
   - id: nekocafe-subconverter
     name: SubConverter
@@ -63,3 +48,43 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+
+  - id: buguwu
+    name: bugUwU Personal Website
+    description: 'bugUwU Personal Website'
+    url: 'https://qwq.lgbt'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: catland-bbs
+    name: Catland猫猫大陆论坛
+    description: 'Catland猫猫大陆官方论坛'
+    url: 'https://catland.top'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: catland-website
+    name: Catland猫猫大陆官网
+    description: 'Catland猫猫大陆官方网站'
+    url: 'https://catland.com.cn'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+ - id: catland-survey
+    name: Catland问卷系统
+    description: 'Catland问卷系统'
+    url: 'https://survey.nekocafe.moe'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+ - id: catland-examine
+    name: Catland审核系统
+    description: 'Catland审核系统'
+    url: 'https://examine.catland.top'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
