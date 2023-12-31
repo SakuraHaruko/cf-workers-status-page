@@ -79,7 +79,7 @@ monitors:
     url: 'https://survey.nekocafe.moe'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
  - id: catland-examine
     name: Catland审核系统
@@ -87,4 +87,4 @@ monitors:
     url: 'https://examine.catland.top'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
