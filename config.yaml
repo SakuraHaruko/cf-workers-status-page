@@ -1,10 +1,9 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.nekocafe.moe' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
-
+  url: 'https://status.nekocafe.moe'
+  logo: logo-192x192.png
+  daysInHistogram: 90
+  collectResponseTimes: true
   allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
   monitorLabelOperational: 'Operational'
@@ -12,7 +11,7 @@ settings:
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
   dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramNotOperational: ' incident(s)'
 
 monitors:
   - id: nekocafe-mainsite
@@ -21,16 +20,15 @@ monitors:
     url: 'https://nekocafe.moe'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
 
-    
   - id: nekocafe-subconverter
     name: SubConverter
     description: 'Utility to convert between various subscription format'
     url: 'https://sub.api.nekocafe.moe'
     method: GET
     expectStatus: 404
-    linkable: false # allows the title to be a link, default=true
+    linkable: false
       
   - id: neteasemusic-api
     name: NeteaseCloudMusic API
@@ -38,16 +36,16 @@ monitors:
     url: 'https://neteasemusic.api.nekocafe.moe'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
 
-  - id: buguwu-chatgpt-bot # unique identifier
+  - id: buguwu-chatgpt-bot
     name: buguwuChatGPTBot (Telegram Bot)
-    description: 'buguwu ChatGPT Bot For Telegram' # default=empty
-    url: 'https://buguwuchatgpt.bot.nekocafe.moe/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    description: 'buguwu ChatGPT Bot For Telegram'
+    url: 'https://buguwuchatgpt.bot.nekocafe.moe/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
 
   - id: buguwu
     name: bugUwU Personal Website
@@ -55,7 +53,7 @@ monitors:
     url: 'https://qwq.lgbt'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
 
   - id: catland-bbs
     name: Catland猫猫大陆论坛
@@ -63,7 +61,7 @@ monitors:
     url: 'https://catland.top'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
 
   - id: catland-website
     name: Catland猫猫大陆官网
@@ -71,20 +69,20 @@ monitors:
     url: 'https://catland.com.cn'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
 
- - id: catland-survey
+  - id: catland-survey
     name: Catland问卷系统
     description: 'Catland问卷系统'
     url: 'https://survey.nekocafe.moe'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: false
 
- - id: catland-examine
+  - id: catland-examine
     name: Catland审核系统
     description: 'Catland审核系统'
     url: 'https://examine.catland.top'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: false
