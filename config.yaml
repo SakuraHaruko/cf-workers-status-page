@@ -38,15 +38,6 @@ monitors:
     expectStatus: 200
     linkable: true
 
-  - id: buguwu-chatgpt-bot
-    name: buguwuChatGPTBot (Telegram Bot)
-    description: 'buguwu ChatGPT Bot For Telegram'
-    url: 'https://buguwuchatgpt.bot.nekocafe.moe/'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-    linkable: false
-
   - id: buguwu
     name: bugUwU Personal Website
     description: 'bugUwU Personal Website'
